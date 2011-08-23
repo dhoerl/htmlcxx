@@ -32,11 +32,7 @@ if (it->isTag() && strcasecasecmp(it->tagName(), "javascript") == 0) continue;
 using namespace std;
 using namespace htmlcxx;
 
-#ifdef DEBUG
-hello world!
-#endif
-
-const char *DEFAULT_CSS = "";
+// const char *DEFAULT_CSS = "";
 
 int main (int argc, const char * argv[])
 {
