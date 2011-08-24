@@ -314,7 +314,7 @@ void htmlcxx::HTML::ParserSax::parseHtmlTag(_Iterator b, _Iterator c)
 		std::string::size_type tag_len = name.length();
 		for (int i = 0; literal_mode_elem[i].len; ++i)
 		{
-			if (tag_len == literal_mode_elem[i].len)
+			if (tag_len == (std::string::size_type)literal_mode_elem[i].len)
 			{
                                 #if defined(WIN32) && !defined(__MINGW32__)
 				if (!_stricmp(name.c_str(), literal_mode_elem[i].str))
