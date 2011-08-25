@@ -78,7 +78,7 @@ void Node::parseAttributes()
 			{
 				char quote = *ptr;
 //				fprintf(stderr, "Trying to find quote: %c\n", quote);
-				const char *end = strchr(ptr + 1, quote);
+				end = strchr(ptr + 1, quote);
 				if (end == 0)
 				{
 					//b = mText.find_first_of(" >", a+1);
