@@ -296,7 +296,7 @@ namespace htmlcxx {
 						int chr = atoi(entity.c_str());
 						if (chr > 0 && chr <= UCHAR_MAX)
 						{
-							ret[count++] = chr;
+							ret[count++] = (unsigned char)chr;
 						}
 						ptr = end + 1;
 					}
