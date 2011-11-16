@@ -39,8 +39,9 @@ namespace htmlcxx {
 				inline void text(const std::string& text) { this->mText = text; }
 				inline const std::string& text() const { return this->mText; }
 
+				inline unsigned int contentOffset() const { return this->mOffset + this->mText.length(); }
 				inline unsigned int contentLength() const { return this->mLength - this->mText.length() - this->mClosingText.length(); }
-				inline std::string content(const std::string& html) const { return html.substr(this->mOffset + this->mText.length(), this->contentLength()); }
+				inline std::string content(const std::string& html) const { return html.substr(this->contentOffset(), this->contentLength()); }
 
 				inline void closingText(const std::string &text) { this->mClosingText = text; }
 				inline const std::string& closingText() const { return mClosingText; }
