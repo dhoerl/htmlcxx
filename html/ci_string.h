@@ -26,7 +26,9 @@
 #include <cctype>
 #include <string>
 
-#if __GNUC__ >= 3
+#if  __clang_major__ >= 3
+struct ci_char_traits : public std::char_traits<char>
+#elif __GNUC__ >= 3
 #include <bits/char_traits.h>
 struct ci_char_traits : public std::char_traits<char>
 #elif defined(__GNUC__)
