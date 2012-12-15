@@ -539,7 +539,7 @@ namespace htmlcxx {
 			ostringstream ret;
 			tree<HTML::Node>::sibling_iterator sib = tr.begin(it);
 			while(sib != tr.end(it)) {
-                ++label;
+				++label;
 				ret << "node [ id " << label << "\n label \"" << label << "\"\n]\n";
 				ret << "edge [ \n source " << parent_id << "\n target " << label << "\n]" << endl;
 				ret << __serialize_gml(tr, sib, end, label, label);
