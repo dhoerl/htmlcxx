@@ -17,3 +17,4 @@ Three targets are provided for testing:
 - added a content method to the Node class returning the content between opening and closing tags, which may be an empty string
 - the css methods were ported over (and it took so fiddling) but while they build clean there are not test cases. Most people probably don't need them.
 - to update the css source files, download the htmlcxx project from sourceforge and build the library.
+ */ Really a good article that helps me a lot /*
