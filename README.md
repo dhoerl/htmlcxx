@@ -1,4 +1,6 @@
-This files in this project were taken from http://htmlcxx.sourceforge.net/ and modified:
+# README
+
+## This files in this project were taken from [Source Forge](http://htmlcxx.sourceforge.net/) and modified:
 
 - a proper header with license information is provided for all files (LGLP and two Apache)
 - the LGLP and Apache licenses are included
@@ -9,7 +11,8 @@ This files in this project were taken from http://htmlcxx.sourceforge.net/ and m
 
 The code here is designed to be incorporated directly in your Mac or iOS project and not as a library.
 
-Three targets are provided for testing:
+## Three targets are provided for testing:
+
 - htmlcxx, which runs the bit of test code shown on the sourceforge page 
 - tests, provided by the original authors
 - uriTests, also provided by the original authors.
