@@ -1,4 +1,3 @@
-# Htmlcxx
 
 ## This files in this project were taken from [Source Forge](http://htmlcxx.sourceforge.net/) and modified:
 
