@@ -37,7 +37,7 @@ namespace htmlcxx
 				ParserSax() : mpLiteral(0), mCdata(false) {}
 				virtual ~ParserSax() {}
 
-				/** Parse the html code */
+				// Parse the html code //
 				void parse(const std::string &html);
 
 				template <typename _Iterator>
